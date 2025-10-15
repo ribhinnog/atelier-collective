@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Atelier Collective</title>
-
     <meta name="description" content="A space for artists to create, connect, and grow together">
 
+    <title>The Atelier Collective</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italiana&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- icon import -->
 
@@ -19,13 +25,13 @@
 
     <header class="site-header">
         <nav class="nav-container">
-            <div class="company">Atelier Collective</div>
+            <div class="company"><a href="#"><h1>Atelier Collective</h1></a></div>
             <div class="navi">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#newsletter">Join</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,11 +53,14 @@
 
         <section id="about">
             <div class="about-box">
-                <h2>Who we are</h2>
-                <div class="about-text">
-                <p>Founded in 2023, The Atelier Collective began as a handful of artists meeting in a shared studio space once a month. Today, we’re a growing group of creatives who value the quiet beauty of craftsmanship and the joy of learning from one another.</p>
+                <div class="story-visual"><img src="resources/jordan-whitt-3peR38cnx9U-unsplash.jpg" alt=""></div>
+                <div class="story">
+                    <h2>Who we are</h2>
+                    <div class="about-text">
+                    <p>Founded in 2023, The Atelier Collective began as a handful of artists meeting in a shared studio space once a month. Today, we’re a growing group of creatives who value the quiet beauty of craftsmanship and the joy of learning from one another.</p>
 
-                <p>We believe in collaboration over competition, and we open our doors to anyone who creates — from students and hobbyists to professionals looking to reconnect with their roots.</p>
+                    <p>We believe in collaboration over competition, and we open our doors to anyone who creates — from students and hobbyists to professionals looking to reconnect with their roots.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,8 +74,8 @@
                     <div class="event-name">Life Drawing Night</div>
                     <div class="event-description">Every first Thursday of the month — bring your sketchbook and meet fellow illustrators in a relaxed, guided session.</div>
                     <div class="event-location">
-                        <div class="location-icon"> </div>
-                        <div class="location-text">London, UK</div>
+                        <div class="location-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="location">London, UK</div>
                     </div>
                 </div>
 
@@ -74,8 +83,8 @@
                     <div class="event-name">Studio Sundays</div>
                     <div class="event-description">Casual open days where members can bring works-in-progress, chat, or just sit and create together.</div>
                     <div class="event-location">
-                        <div class="location-icon"> </div>
-                        <div class="location-text">London, UK</div>
+                        <div class="location-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="location">London, UK</div>
                     </div>
                 </div>
 
@@ -83,8 +92,8 @@
                     <div class="event-name">Member Showcase</div>
                     <div class="event-description">Quarterly exhibition featuring selected works from our community at the local gallery hall.</div>
                     <div class="event-location">
-                        <div class="location-icon"> </div>
-                        <div class="location-text">London, UK</div>
+                        <div class="location-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="location">London, UK</div>
                     </div>
                 </div>
             </div>
@@ -96,50 +105,46 @@
             <div class="gallery-container">
 
                 <div class="gallery-item">
-                    <img src="" alt="">
+                    <img src="resources/ataberk-guler-roqg7tnfjPU-unsplash.jpg" alt="">
                 </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
+                <!-- <div class="gallery-desc">lorem ipsum dolor sit amet</div> -->
 
                 <div class="gallery-item">
-                    <img src="" alt="">
+                    <img src="resources/avi-richards-PfUH_AuFE_0-unsplash.jpg" alt="">
                 </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
+                <!-- <div class="gallery-desc">lorem ipsum dolor sit amet</div> -->
 
                 <div class="gallery-item">
-                    <img src="" alt="">
+                    <img src="resources/jonathan-borba-lsGZlrdvd_c-unsplash.jpg" alt="">
                 </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
+                <!-- <div class="gallery-desc">lorem ipsum dolor sit amet</div> -->
 
                 <div class="gallery-item">
-                    <img src="" alt="">
+                    <img src="resources/pexels-werlleymeira-1486468.jpg" alt="">
                 </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
-
-                <div class="gallery-item">
-                    <img src="" alt="">
-                </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
+                <!-- <div class="gallery-desc">lorem ipsum dolor sit amet</div> -->
                 
                 <div class="gallery-item">
-                    <img src="" alt="">
+                    <img src="resources/tom-chen-6DH6BojClJg-unsplash.jpg" alt="">
                 </div>
-                <div class="gallery-desc">lorem ipsum dolor sit amet</div>
+                <!-- <div class="gallery-desc">lorem ipsum dolor sit amet</div> -->
 
             </div>
         </section>
 
         <section id="newsletter">
-            <h2>Become Part of the Collective</h2>
+            <div class="newsletter-container">
+                <h2>Become Part of the Collective</h2>
 
-            <p>We welcome artists of all backgrounds and experience levels.</p>
-            
-            <p>Subscribe below to receive updates about upcoming events, exhibitions, and membership openings.</p>
+                <p>We welcome artists of all backgrounds and experience levels.</p>
+                
+                <p>Subscribe below to receive updates about upcoming events, exhibitions, and membership openings.</p>
 
-            <form class="email-form">
-                <input type="email" placeholder="your email address" required>
-            <button type="submit">Join the Collective</button>
-            </form>
-
+                <form class="email-form">
+                    <input type="email" placeholder="your email address" required>
+                <button type="submit">Join the Collective</button>
+                </form>
+            </div>
         </section>
     </main>
 
